@@ -92,6 +92,9 @@ SELECT u.first_name as first_name,
     ON o.user_id = u.id
  WHERE o._order_date SIMILAR to '\d+/(9|10|11)/2022';
 ```
+![image](https://github.com/IlyaTsyganov/WB_SQL_1/assets/56352896/4ccf0f67-cb8a-44fa-b2af-918cc9b7cd76)
+
+
 4.	
 ```
 SELECT *,
@@ -123,6 +126,9 @@ SELECT domain, COUNT(domain) as cnt
  order by cnt DESC
  LIMIT 3
 ```
+
+![image](https://github.com/IlyaTsyganov/WB_SQL_1/assets/56352896/97fedd5f-5aa4-4a15-86be-c52f68b744db)
+
 
 7.	СУБД не обработает данный запрос, так как в инструкции WHERE происходит обращение на псевдоним, который мы осуществляем в инструкции SELECT, которая выполняется ПОЗЖЕ, чем WHERE.
 
